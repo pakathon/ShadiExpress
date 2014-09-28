@@ -1,0 +1,20 @@
+<header class="Header">
+    <div class="Content  Content--sized">
+        {{link-to "ShadiExpress" "landing" class="Header-link"}}
+        <nav class="Header-nav  Content-block  Content-block--right">
+            <ul class="List  List--inlined  List--spaced  Header-list">
+                <li class="Header-listItem">
+                    {{link-to "About" "about" class="Header-link"}}
+                </li>{{!
+              }}<li class="Header-listItem">
+                    {{link-to "Login" "login" class="Header-link"}}
+                </li>{{!
+              }}<li class="Header-listItem">
+                    {{link-to "Donate" "donate" class="Header-link"}}
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+{{outlet}}

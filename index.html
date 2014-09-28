@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Shadi Express</title>
+        <link rel="stylesheet" href="/lib/normalize.css">
+        <link rel="stylesheet" href="/styles/restart.css">
+        <link rel="stylesheet" href="/styles/main.css">
+        <link rel="stylesheet" href="/styles/james.css">
+        <script src="/lib/require.js" data-main="/scripts/main"></script>
+        <script>
+            require.config({
+                baseUrl: '/scripts',
+                paths: {
+                    'text': '/lib/text',
+                    'jquery': '/lib/jquery',
+                    'jquery.sortable': '/lib/jquery.sortable',
+                    'handlebars': '/lib/handlebars',
+                    'ember': '/lib/ember',
+                },
+                shim: {
+                    'ember': {
+                        deps: ['jquery', 'handlebars'],
+                        exports: 'Em'
+                    },
+                }
+            })
+        </script>
+    </head>
+</html>

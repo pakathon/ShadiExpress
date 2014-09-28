@@ -1,0 +1,115 @@
+/*
+Monza: CF000F
+Ripe Lemon: F7CA18
+Shamrock: 2ECC71
+*/
+html {
+  min-height: 100%;
+}
+.Header {
+  background: #CF000F;
+}
+.Header-link,
+.Header-link:hover {
+  color: #fff;
+}
+html.landing {
+  background:url(/images/webpage-background.jpg) center no-repeat;
+  background-size:cover;
+  color:white;
+  -webkit-user-select:none;
+  -khtml-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+html.landing .Header {
+  background: none;
+}
+html.landing .Header-link,
+html.landing .Header-link:hover {
+  color: #fff;
+}
+.Hero {
+  height:500px;
+  margin-top:60px;
+}
+.Hero-title {
+  color:#fff;
+}
+.Header-link {
+  font-size:18px;
+
+  -webkit-transition:all 0.35s ease-in-out;
+  -moz-transition:all 0.35s ease-in-out;
+  -ms-transition:all 0.35s ease-in-out;
+  -o-transition:all 0.35s ease-in-out;
+  transition:all 0.35s ease-in-out;
+}
+.Hero-button {
+  border:1px solid #fff;
+  padding:40px 0;
+  cursor:pointer;
+  display:block;
+  font-size:24px;
+
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  -ms-border-radius:10px;
+  -o-border-radius:10px;
+  border-radius:10px;
+
+  -webkit-transition:all 0.35s ease-in-out;
+  -moz-transition:all 0.35s ease-in-out;
+  -ms-transition:all 0.35s ease-in-out;
+  -o-transition:all 0.35s ease-in-out;
+  transition:all 0.35s ease-in-out;
+}
+.Hero-button:hover {
+  background-color:#fff;
+  color:#000;
+  border:1px solid #fff;
+}
+.Grid  .Content-section {
+
+}
+.Button {
+  padding:15px 60px;
+  font-size:21px;
+  border:none;
+  color:#fff;
+  background-color:#cf000f;
+
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  -ms-border-radius:10px;
+  -o-border-radius:10px;
+  border-radius:10px;
+
+  -webkit-transition:all 0.35s ease-in-out;
+  -moz-transition:all 0.35s ease-in-out;
+  -ms-transition:all 0.35s ease-in-out;
+  -o-transition:all 0.35s ease-in-out;
+  transition:all 0.35s ease-in-out;
+}
+.Button:hover {
+  background-color:#2ECC71;
+}
+.Draggable-box:before {
+  background:#cf000f;
+}
+.Draggable-checkbox:checked + .Draggable-box:before {
+  background:#2ECC71;
+}
+.Draggable-checkbox:checked + .Draggable-box {
+  background:#444;
+  border-color:#444;
+  color:#fff;
+}
+.Hero-checkbox:checked + .Hero-button:before {
+  background:#2ecc71;
+}
+.List > li > ul {
+  list-style:none;
+  margin:5px;
+}

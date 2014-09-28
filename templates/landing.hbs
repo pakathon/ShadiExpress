@@ -1,0 +1,42 @@
+<div class="Hero  Content  Content--sized">
+    <h1 class="Hero-title"><b>Shadi</b>Express</h1>
+    <div class="Hero-tagline">
+        <p>Plan wisely</p>
+    </div>
+    <div class="Grid  Content-section">
+        <div class="Grid-column" data-viewport-desktop="3/12">
+            {{input type="checkbox" id="planner-day-mehndi" class="Hero-checkbox" checked=isMehndiSelected}}
+            <label class="Hero-button" for="planner-day-mehndi">
+                <span>Mehndi</span>
+            </label>
+        </div>{{!
+      }}<div class="Grid-column" data-viewport-desktop="3/12">
+            {{input type="checkbox" id="planner-day-baraat" class="Hero-checkbox" checked=isBaraatSelected}}
+            <label class="Hero-button" for="planner-day-baraat">
+                <span>Baraat</span>
+            </label>
+        </div>{{!
+      }}<div class="Grid-column" data-viewport-desktop="3/12">
+            {{input type="checkbox" id="planner-day-valima" class="Hero-checkbox" checked=isValimaSelected}}
+            <label class="Hero-button" for="planner-day-valima">
+                <span>Valima</span>
+            </label>
+        </div>{{!
+      }}<div class="Grid-column" data-viewport-desktop="3/12">
+            {{input type="checkbox" id="planner-day-other" class="Hero-checkbox" checked=isOtherSelected}}
+            <label class="Hero-button" for="planner-day-other">
+                <span>Other</span>
+            </label>
+        </div>
+    </div>
+    <div class="Content-section">
+        <button type="button" class="Button" {{action "getStarted"}}>Get Started</button>
+    </div>
+    <div class="Content-section">
+        <ul class="List  List--inlined  List--spaced  List--flowing">
+            <li><span class="Icon  Icon--facebook"></span></li>{{!
+          }}<li><span class="Icon  Icon--twitter"></span></li>{{!
+          }}<li><span class="Icon  Icon--email"></span></li>
+        </ul>
+    </div>
+</div>

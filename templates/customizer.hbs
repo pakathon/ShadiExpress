@@ -1,0 +1,22 @@
+<div class="Content  Content--sized  Customizer">
+    <h2>Customize your selected vendors</h2>
+    <ul class="List  List--cleaned  List--spaced">
+        {{#each category in categories}}
+            <li>
+                <h4 class="Customizer-title">{{category.name}}</h4>
+                <ul>
+                    {{#each vendor in category.vendors}}
+                        <li>
+                            {{#link-to "profile" class="Customizer-link"}}
+                                {{vendor.name}}
+                                {{#if vendor.isSelected}}
+                                    <span class="Text  Text--dimmed">(selected)</span>
+                                {{/if}}
+                            {{/link-to}}
+                        </li>
+                    {{/each}}
+                </ul>
+            </li>
+        {{/each}}
+    </ul>
+</div>

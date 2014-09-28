@@ -1,0 +1,126 @@
+/*
+    red (monza): #CF000F
+    red-hover (thunderbird): #D91E18
+    yellow (ripe lemon): #F7CA18
+    green (shamrock): #2ECC71
+*/
+
+html {
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    position: relative;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+input[type=search] {
+    box-sizing: inherit;
+}
+
+a {
+    color: #CF000F;
+    text-decoration: none;
+}
+a:hover,
+a:focus,
+a:active {
+    color: #D91E18;
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, address,
+dl, dd, ol, ul,
+form, fieldset, legend, figure,
+table, th, td, caption,
+hr {
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+ul, ol, dd {
+    padding-left: 40px;
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+abbr[title],
+dfn[title] {
+    cursor: help;
+}
+
+u,
+ins {
+    text-decoration: none;
+}
+ins {
+    border-bottom: 1px solid;
+}
+
+b,
+strong {
+    line-height: 0;
+}
+
+img {
+    font-style: italic;
+    max-width: 100%;
+    height: auto;
+}
+
+select {
+    max-width: 100%;
+}
+
+::placeholder { color: #999; }
+.placeholder { color: #999; }
+
+:required:invalid {
+    box-shadow: none;
+}
+
+:focus,
+:required:invalid:focus {
+    outline: 1px dotted;
+    outline-offset: 0;
+}
+
+legend {
+    width: 100%;
+}
+
+fieldset {
+    border: 0;
+}
+
+input, button, textarea {
+    font: inherit;
+    max-width: 100%;
+}
+
+button::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+textarea {
+    resize: vertical;
+    overflow: auto;
+}
+
+table {
+    table-layout: fixed;
+}
+
+input, form, textarea, fieldset, button {
+    font-size: inherit;
+}

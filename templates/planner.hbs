@@ -1,0 +1,57 @@
+<div class="Content  Content--sized">
+</div>
+<div class="Content  Content--sized">
+    <div class="Grid">
+        <div class="Grid-column" data-viewport-desktop="4/12">
+            <ul class="List  List--cleaned">
+                <li>
+                    <button type="button"
+                        {{bind-attr class=":Sidetab  isBudgetActive:Sidetab--active"}}
+                        {{action "goToBudget"}}>
+                        Budget
+                    </button>
+                </li>
+                {{#if isMehndiSelected}}
+                    <li>
+                        <button type="button"
+                            {{bind-attr class=":Sidetab  isMehndiActive:Sidetab--active"}}
+                            {{action "goToMehndi"}}>
+                            Mehndi
+                        </button>
+                    </li>
+                {{/if}}
+                {{#if isBaraatSelected}}
+                    <li>
+                        <button type="button"
+                            {{bind-attr class=":Sidetab  isBaraatActive:Sidetab--active"}}
+                            {{action "goToBaraat"}}>
+                            Baraat
+                        </button>
+                    </li>
+                {{/if}}
+                {{#if isValimaSelected}}
+                    <li>
+                        <button type="button"
+                            {{bind-attr class=":Sidetab  isValimaActive:Sidetab--active"}}
+                            {{action "goToValima"}}>
+                            Valima
+                        </button>
+                    </li>
+                {{/if}}
+                {{#if isOtherSelected}}
+                    <li>
+                        <button type="button"
+                            {{bind-attr class=":Sidetab  isOtherActive:Sidetab--active"}}
+                            {{action "goToOther"}}>
+                            Other
+                        </button>
+                    </li>
+                {{/if}}
+            </ul>
+        </div>{{!
+      }}<div class="Grid-column" data-viewport-desktop="8/12">
+            {{outlet}}
+            <button class="Button  Button--block" type="button" {{action "nextStep"}}>Continue</button>
+        </div>
+    </div>
+</div>

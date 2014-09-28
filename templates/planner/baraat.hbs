@@ -1,0 +1,13 @@
+<div class="Content-section">
+    <h2>Choose and sort your interests</h2>
+    <ul class="List  List--cleaned  List--spaced  js-sortable">
+        {{#each category in categories}}
+            <li class="Draggable">
+                {{input type="checkbox" class="Draggable-checkbox" id=category.drag_id}}
+                <label class="Draggable-box" {{bind-attr for=category.drag_id}}>
+                    {{~category.name}}
+                </label>
+            </li>
+        {{/each}}
+    </ul>
+</div>

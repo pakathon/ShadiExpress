@@ -1,0 +1,10 @@
+<div class="Content-section">
+    <h2>Enter your budget</h2>
+    {{input type="text" size="6" class="Input" id="budget_input" pattern="^[\d, ]+$" value=controllers.planner.budget~}}
+    &nbsp;&nbsp;<label for="budget_input">Rupees</label>
+</div>
+<div class="Content-section">
+    <h2>Enter your guest count</h2>
+    {{input type="text" size="6" class="Input" id="guest_count_input" pattern="^[\d, ]+$" value=controllers.planner.guest_count~}}
+    &nbsp;&nbsp;<label for="budget_input">guests</label>
+</div>
