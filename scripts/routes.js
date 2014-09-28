@@ -23,7 +23,7 @@ define(function(require) {
 
     App.PlannerRoute = Em.Route.extend({
         model: function() {
-            return $.getJSON('/fixtures/vendors.json').then(function(data) {
+            return $.getJSON('/ShadiExpress/fixtures/vendors.json').then(function(data) {
                 return {
                     vendors: data
                 }
@@ -73,7 +73,7 @@ define(function(require) {
 
     App.CustomizerRoute = Em.Route.extend({
         model: function() {
-            return $.getJSON('/fixtures/selected_vendors.json').then(function(data) {
+            return $.getJSON('/ShadiExpress/fixtures/selected_vendors.json').then(function(data) {
                 return {
                     vendors: data
                 }
@@ -83,7 +83,7 @@ define(function(require) {
 
     App.ProfileRoute = Em.Route.extend({
         model: function() {
-            return $.getJSON('/fixtures/profile_vendor.json')
+            return $.getJSON('/ShadiExpress/fixtures/profile_vendor.json')
         }
     })
 

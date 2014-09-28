@@ -14,7 +14,7 @@ html {
   color: #fff;
 }
 html.landing {
-  background:url(/images/webpage-background.jpg) center no-repeat;
+  background:url(/ShadiExpress/images/webpage-background.jpg) center no-repeat;
   background-size:cover;
   color:white;
   -webkit-user-select:none;
@@ -115,6 +115,7 @@ html.landing .Header-link:hover {
 .List > li > ul {
   list-style:none;
   margin:5px;
+  display:inline;
 }
 .List > li > ul > li {
   margin:10px;
