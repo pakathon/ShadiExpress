@@ -155,27 +155,16 @@ define(function(require) {
 
     App.PlannerIndexController = Em.ObjectController.extend({
         needs: ['planner'],
-    })
-
-    App.PlannerMehndiController = Em.ObjectController.extend({
-        needs: ['planner'],
         categories: Em.computed.alias('controllers.planner.categories'),
     })
 
-    App.PlannerBaraatController = Em.ObjectController.extend({
-        needs: ['planner'],
-        categories: Em.computed.alias('controllers.planner.categories'),
-    })
+    App.PlannerMehndiController = App.PlannerIndexController.extend()
 
-    App.PlannerValimaController = Em.ObjectController.extend({
-        needs: ['planner'],
-        categories: Em.computed.alias('controllers.planner.categories'),
-    })
+    App.PlannerBaraatController = App.PlannerIndexController.extend()
 
-    App.PlannerOtherController = Em.ObjectController.extend({
-        needs: ['planner'],
-        categories: Em.computed.alias('controllers.planner.categories'),
-    })
+    App.PlannerValimaController = App.PlannerIndexController.extend()
+
+    App.PlannerOtherController = App.PlannerIndexController.extend()
 
     App.CustomizerController = Em.ObjectController.extend({
         needs: ['planner'],
