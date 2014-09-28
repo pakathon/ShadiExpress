@@ -122,6 +122,10 @@ html.landing .Header-link:hover {
   width:300px;
   box-shadow:0 1px 3px rgba(26,53,71,.08), 0 0 0 1px rgba(26,53,71,.04), 0 1px 1px rgba(26,53,71,.06);
 }
+.List > li > ul > li > a > img {
+  width:100px;
+  height:100px;
+}
 .List > li > ul > li > a {
   text-decoration:none;
 }

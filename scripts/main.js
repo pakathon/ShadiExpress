@@ -15,7 +15,7 @@ define(function(require) {
     ]
 
     var requiredPaths = fileNames.map(function(file) {
-        return 'text!/templates/' + file + '.hbs'
+        return 'text!/ShadiExpress/templates/' + file + '.hbs'
     })
 
     require(requiredPaths, function() {
