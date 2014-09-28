@@ -114,15 +114,16 @@ html.landing .Header-link:hover {
   margin-top:15px;
   margin-bottom:10px;
 }
-.List > li > ul {
-  list-style:none;
-  margin:5px;
-}
-.List > li > ul > li {
+.Customizer-linkBox {
+  transition: 0.15s ease-in;
+  text-align: center;
+  opacity: 0.5;
   margin:10px;
   padding:10px 10px 30px 10px;
-  width:250px;
-  box-shadow:0 1px 3px rgba(26,53,71,.08), 0 0 0 1px rgba(26,53,71,.04), 0 1px 1px rgba(26,53,71,.06);
+  width:120px;
+  min-height: 200px;
+  border: 1px solid #eee;
+  box-shadow:0 1px 3px rgba(26,53,71,.08), 0 1px 1px rgba(26,53,71,.06);
   -webkit-border-radius:3px;
   -moz-border-radius:3px;
   -ms-border-radius:3px;
@@ -130,10 +131,18 @@ html.landing .Header-link:hover {
   border-radius:3px;
   display:inline-table;
 }
-.List > li > ul > li > a > img {
-  width:250px;
-  height:200px;
+.Customizer-linkBox.is-selected,
+.Customizer-linkBox:hover {
+  opacity: 1;
+  border-color: #ccc;
 }
-.List > li > ul > li > a {
-  text-decoration:none;
+.Customizer-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
 }
+  .Customizer-avatar img {
+    min-width: 100%;
+    min-height: 100%;
+  }

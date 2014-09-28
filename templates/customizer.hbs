@@ -4,16 +4,21 @@
         {{#each category in categories}}
             <li>
                 <h4 class="Customizer-title">{{category.name}}</h4>
-                <ul>
+                <ul class="List  List--inlined  List--spaced">
                     {{#each vendor in category.vendors}}
                         <li>
                             {{#link-to "profile" class="Customizer-link"}}
-                                <img {{bind-attr src=vendor.profile_pic}} alt="Logo">
-                                <br>
-                                {{vendor.name}}
-                                {{#if vendor.isSelected}}
-                                    <span class="Text  Text--dimmed">(selected)</span>
-                                {{/if}}
+                                <div {{bind-attr class=":Customizer-linkBox  vendor.isSelected:is-selected"}}>
+                                    <div class="Customizer-avatar">
+                                        <img {{bind-attr src=vendor.profile_pic}} alt="Logo">
+                                    </div>
+                                    <br>
+                                    {{vendor.name}}
+                                    {{#if vendor.isSelected}}
+                                        <br>
+                                        <span class="Text  Text--dimmed">(selected)</span>
+                                    {{/if}}
+                                </div>
                             {{/link-to}}
                         </li>
                     {{/each}}
