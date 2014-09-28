@@ -8,6 +8,8 @@
                     {{#each vendor in category.vendors}}
                         <li>
                             {{#link-to "profile" class="Customizer-link"}}
+                                <img {{bind-attr src=vendor.profile_pic}} alt="Logo">
+                                <br>
                                 {{vendor.name}}
                                 {{#if vendor.isSelected}}
                                     <span class="Text  Text--dimmed">(selected)</span>
